@@ -1,0 +1,120 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+}
+.navbar {
+    top: 0;
+    position: relative;
+    width: 100%;
+
+}
+
+.nav-bar-container {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(156, 139, 120);
+
+
+}
+
+.nav-bar-home{
+    list-style-type: none;
+    overflow: visible;
+    /* margin-left: 10rem; */
+    margin-left: var(--nav-bar-home-margin-left);
+    display: flex;
+    padding: 1rem;
+
+}
+
+.nav-bar-pages {
+    list-style-type: none;
+    overflow: visible;
+    margin-right: 10rem;
+    display: none;
+    padding: 1rem;
+}
+
+.nav-bar-pages li {
+    padding: .5rem
+}
+
+.nav-bar-pages-burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    margin-right: var(--nav-bar-burger-margin-right);
+    padding: 1rem;
+}
+
+.nav-bar-pages-burger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.3 ease;
+}
+
+.nav-bar-pages-burger.active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.nav-bar-pages-burger .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-bar-pages-burger.active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+.nav-bar-pages.show {
+    display: flex;
+}
+
+/* Media Queries */
+:root {
+    --nav-bar-home-margin-left: 10rem;
+    --nav-bar-burger-margin-right: 3.5rem;
+    --nav-bar-links-margin-right:10rem
+}
+@media screen and (max-width:800px) {
+    .nav-bar-home {
+        --nav-bar-home-margin-left: 8rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .nav-bar-home {
+        --nav-bar-home-margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .nav-bar-home {
+        --nav-bar-home-margin-left: 2rem;
+    }
+    .nav-bar-pages-burger {
+        --nav-bar-burger-margin-right: 2.5rem;
+    }
+}
+
+@media screen and (min-width:800px) {
+
+    .nav-bar-pages-burger {
+        display: none;
+    }
+
+    .nav-bar-pages {
+        display: flex;
+    }
+}
+

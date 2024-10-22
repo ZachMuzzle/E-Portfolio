@@ -1,0 +1,27 @@
+{
+  "name": "typescript-portfolio-app",
+  "version": "1.0.0",
+  "description": "Typescript portfolio",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "node dist/server.js",
+    "build:backend": "tsc --project tsconfig.backend.json",
+    "build:frontend": "tsc --project tsconfig.frontend.json",
+    "build": "npm run build:backend && npm run build:frontend",
+    "dev": "nodemon --exec ts-node src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.5",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}

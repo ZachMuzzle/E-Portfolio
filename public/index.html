@@ -6,27 +6,35 @@
     <title>Portfolio</title>
     <link href="css/styles.css" rel="stylesheet">
 </head>
-<body>
-    <!-- NAV-BAR -->
+<header class="header">
+    <!-- Mobile Header -->
+     <div class="mobileHeader">
+        <div class="nav-bar-pages-burger" id="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-bar-home">
+            <li><a>Zachary Muzzleman's E-Portfolio</a></li>
+           </ul>
+     </div>
+     <!-- NAV-BAR -->
      <nav class="navbar">
-         <div class="nav-bar-container">
-             <ul class="nav-bar-home">
-                 <li><a>Zachary Muzzleman's E-Portfolio</a></li>
-                </ul>
-                <ul class="nav-bar-pages" id="nav-links">
-                    <li><a>Home</a></li>
-                    <li><a>About me</a></li>
-                    <li><a>Resume</a></li>
-                    <li><a>Future</a></li>
-                    <li><a>Contact</a></li>
-                </ul>
-                <div class="nav-bar-pages-burger" id="burger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
+        <!-- <div class="nav-bar-container"> -->
+               <ul class="nav-bar-pages" id="nav-links">
+                   <li class="nav-bar-pages-list-item"><a>Home</a></li>
+                   <li><a>About me</a></li>
+                   <li><a>Resume</a></li>
+                   <li><a>Future</a></li>
+                   <li><a>Contact</a></li>
+               </ul>
+               <ul class="nav-bar-home" id="nav-bar-home">
+                   <li><a>Zachary Muzzleman's E-Portfolio</a></li>
+                  </ul>
+           <!-- </div> -->
+       </nav>
+</header>
+<body>
         <script src="js/script.js"></script>
      <!-- NAV-BAR END -->
 </body>

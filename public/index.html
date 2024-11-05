@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/sections.css" rel="stylesheet">
+
 </head>
-<header class="header">
+<header class="header fade-in">
     <!-- Mobile Header -->
      <div class="mobileHeader">
         <div class="nav-bar-pages-burger" id="burger">
@@ -25,7 +27,7 @@
                    <li class="nav-bar-pages-list-item"><a>Home</a></li>
                    <li><a>About me</a></li>
                    <li><a>Resume</a></li>
-                   <li><a>Future</a></li>
+                   <li><a>Projects</a></li>
                    <li><a>Contact</a></li>
                </ul>
                <ul class="nav-bar-home" id="nav-bar-home">
@@ -35,7 +37,57 @@
        </nav>
 </header>
 <body>
+    <section id="home" class="fade-in">
+        <div class="section-container">
+
+            <h1>
+                Welcome to my E-Portfolio
+            </h1>
+            <p>
+                This E-Portfolio showcases projects and accomplishments that I have achieved over the years.
+            </p>
+        </div>
+    </section>
+
+    <section id="about-me" class="fade-in">
+        <div class="section-container">
+            <h2>About me</h2>
+            <p>
+                Hello, my name is Zachary Muzzleman. I'm an inspiring software developer that loves to learn new technical skills
+                and build software that peak my interests. I'm currently working as a associate software developer at Fulton Bank.
+                Where I work in an agile methodology and work with team members to build automatons/integrations based on the project
+                mangers needs. We look to help the bank by speeding up tasks and removing manual work by that the business completes
+                this can lead to saving the bank money and time. The majority of the work I complete is building,testing, and deploying APIs,
+                we use Postman to test APIs we build or to work with vendor APIs that we use withing our processes. I also work with gathering
+                date from various databases using SQL Developer (Oracle) or SQL Management (SQL Server).
+            </p>
+            <p>
+                I have a passion for building and learning new technologies and tech stacks that aim to help me become a more efficient developer
+                for when I'm working or when I work on side projects. I would love to break into a more traditional developer/engineering role
+                where I use traditional industry tech stacks and build relationships with co-workers that can help with advancing in my career. 
+            </p>
+        </div>
+    </section>
+    <section id="resume" class="fade-in">
+        <div class="section-container">
+            <h2>Resume</h2>
+        </div>
+    </section>
+    <section id="projects" class="fade-in">
+        <div class="section-container">
+            <h2>Projects</h2>
+        </div>
+    </section>
+    <section id="contact" class="fade-in">
+        <div class="section-container">
+            <h2>Contact me</h2>
+        </div>
+    </section>
         <script src="js/script.js"></script>
-     <!-- NAV-BAR END -->
-</body>
+        <footer class="fade-in">
+            <p>
+                © Zachary Muzzleman
+            </p>
+        </footer>
+    </body>
 </html>

@@ -1,33 +1,4 @@
 "use strict";
-// const burger = document.getElementById('burger') as HTMLElement;
-// const navLinks = document.getElementById('nav-links') as HTMLElement;
-// const navBar = document.querySelector('.navbar') as HTMLElement;
-// const navBarHome = document.getElementById('nav-bar-home') as HTMLElement;
-// let buttonClick: boolean;
-// burger.addEventListener('click', () => {
-//     toggleClasses();
-//     if(buttonClick) {
-//         navBar.style.display = "none";
-//         buttonClick = false;
-//         navBarHome.style.display = "flex";
-//     } else if (!buttonClick) {
-//         navBar.style.display = "block";
-//         buttonClick = true;
-//         navBarHome.style.display = "none";
-//     }
-// });
-// window.addEventListener('resize', () => {
-//     if(burger.classList.contains('active')) {
-//         toggleClasses();
-//         navBar.style.display = "none";
-//         buttonClick = false;
-//         navBarHome.style.display = "flex";
-//     }
-// });
-// function toggleClasses() {
-//     burger.classList.toggle('active');
-//     navLinks.classList.toggle('show');
-// }
 class navBarToggle {
     constructor(burgerId, navLinksId, navBarHomeId, navBarClass) {
         this.buttonClick = false;

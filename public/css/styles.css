@@ -10,6 +10,10 @@
     --nav-bar-links-margin-left:10rem
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #contactEmail {
 	color: #6096BA;
 	opacity: 70%;
@@ -20,6 +24,7 @@
 #contactEmail:hover {
     opacity: 100%;
 }
+
 
 /* Keyframes and Animations */
 @keyframes fadeIn {
@@ -69,6 +74,10 @@ body {
     /* display: grid; */
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 .header {
     display: flex;
     width: 100%;
@@ -183,6 +192,9 @@ footer {
     padding: auto;
 }
 
+.footer-text {
+    text-indent: 0;
+}
 /* Media Queries */
 @media screen and (max-width:800px) {
     .nav-bar-home {

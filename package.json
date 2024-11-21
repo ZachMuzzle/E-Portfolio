@@ -9,7 +9,7 @@
     "build:backend": "tsc --project tsconfig.backend.json",
     "build:frontend": "tsc --project tsconfig.frontend.json",
     "build": "npm run build:backend && npm run build:frontend",
-    "dev": "nodemon --exec ts-node src/app.ts"
+    "dev": "nodemon dist/server.js"
   },
   "keywords": [],
   "author": "",

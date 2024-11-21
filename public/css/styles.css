@@ -7,11 +7,16 @@
 :root {
     --nav-bar-home-margin-right: 7.5rem;
     --nav-bar-burger-margin-left: 3.5rem;
-    --nav-bar-links-margin-left:10rem
+    --nav-bar-links-margin-left:10rem;
+    --spacing-1rem: 1rem;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+h2 {
+    margin: var(--spacing-1rem) 0;
 }
 
 #contactEmail {

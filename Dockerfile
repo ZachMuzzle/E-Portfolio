@@ -5,8 +5,8 @@ WORKDIR /app
 COPY package*.json ./
 
 RUN npm install
-
-RUN npm install -g nodemon
+# nodemon for dev only
+# RUN npm install -g nodemon
 
 COPY . .
 

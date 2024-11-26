@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /home/zachary/typescript-portfolio-app:/app # Map local directory to container's /app directory
+      - /node_modules # Prevent node_modules from being overwritten
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
+    command: ["npm", "run", "dev"]
+    # stdin_open: true
+    # tty: true 
